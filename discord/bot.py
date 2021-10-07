@@ -5,7 +5,7 @@ import discord
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('')
+TOKEN = os.getenv('Your Token')
 
 client = discord.Client()
 
@@ -39,4 +39,4 @@ async def on_message(message):
         await message.channel.send(response)
     
 
-client.run('')
+client.run('Token')
